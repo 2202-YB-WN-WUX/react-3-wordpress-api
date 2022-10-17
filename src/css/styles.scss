@@ -1,0 +1,78 @@
+@import "./modules/variables";
+@import "./modules/navbar";
+
+* {
+    font-family: "Courier", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+// home page
+
+#hero {
+    background-color: $purple;
+    color: $white;
+    padding: $large-spacing;
+}
+
+#home {
+    padding: $large-spacing;
+
+    #message {
+        margin-bottom: $med-spacing;
+    }
+
+
+}
+
+// footer
+#footer {
+    background: $yellow;
+
+    .footer-section {
+        padding: $med-spacing;
+
+        h3 {
+            margin-bottom: $small-spacing
+        }
+
+        ul {
+            margin-bottom: $med-spacing;
+
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+
+    #bottom-bar {
+        font-size: 12px;
+        text-align: center;
+        padding: $small-spacing;
+    }
+}
+
+// news page
+
+#news {
+    #item-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+
+        .item {
+            padding: 20px;
+
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: 50% 0%;
+            }
+        }
+    }
+}
+
+// media queries
+@import "./modules/tablet-styles";
+@import "./modules/desktop-styles";

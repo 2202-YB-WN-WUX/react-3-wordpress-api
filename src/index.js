@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
-import Website from './Website';
+import App from './components/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Website />
+  <App />
 );

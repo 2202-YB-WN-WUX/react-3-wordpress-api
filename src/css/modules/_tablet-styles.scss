@@ -1,0 +1,34 @@
+/* Media queries */
+@media screen and (min-width: 780px) {
+
+    .show-mobile-menu-button {
+        display: none;
+    }
+
+    #topnav #logo {
+        margin-top: 0px;
+    }
+
+    #menu {
+        display: block;
+        width: 75%;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu-container {
+        display: none;
+    }
+
+    #news {
+        #item-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 20px;
+        }
+    }
+
+
+}
