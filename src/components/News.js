@@ -1,7 +1,10 @@
 import { useAxios } from "use-axios-client"
 
+// grab our env
+const baseUrl = process.env.REACT_APP_WP_API_BASEURL;
+
 const AllNews = () => {
-    const endpoint = `http://localhost/wordpress-react/wp-json/wp/v2/posts?_embed`
+    const endpoint = `${baseUrl}posts?_embed`
     const { data: newsPosts, error, loading } = useAxios({
         url: endpoint
     })
@@ -15,12 +18,26 @@ const AllNews = () => {
     console.log(newsPosts);
 
     const showNewsPosts = newsPosts.map((post, index) => {
+
+        // check if the featured image exists, if not then use a placeholder
+        const GetImageOrPlaceHolder = () => {
+            if (post._embedded['wp:featuredmedia']) {
+                return (
+                    <img src={post._embedded['wp:featuredmedia'][0].source_url} alt={post.title.rendered} />
+                )
+            } else {
+                return (
+                    <img src="https://via.placeholder.com/500" alt="placeholder" />
+                )
+            }
+        }
+
         return (
             <div className="item" key={index}>
-                <img src={post._embedded['wp:featuredmedia'][0].source_url} alt={post.title.rendered} />
+                <GetImageOrPlaceHolder />
                 <h3>{post.title.rendered}</h3>
                 <div className="content">
-                    <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                    <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
                 </div>
             </div>
         )
@@ -38,7 +55,7 @@ const News = () => {
     return (
         <div id="news">
             <h2>Latest News</h2>
-            <div id="item-container">
+            <div className="item-container">
                 <AllNews />
             </div>
         </div>

@@ -1,11 +1,8 @@
 /* Media queries */
 @media screen and (min-width: 1280px) {
-    #news {
-        #item-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            margin-bottom: 20px;
-        }
+    .item-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 20px;
     }
-
 }

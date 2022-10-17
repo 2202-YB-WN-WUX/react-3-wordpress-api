@@ -22,12 +22,10 @@
         display: none;
     }
 
-    #news {
-        #item-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            margin-bottom: 20px;
-        }
+    .item-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
     }
 
 

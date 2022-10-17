@@ -1,3 +1,6 @@
+// import dependancies
+import { Link } from "react-router-dom";
+
 import { useState } from 'react'
 import { List } from 'react-bootstrap-icons';
 import MobileMenu from './MobileMenu'
@@ -19,17 +22,17 @@ const Navbar = () => {
             <div id='topnav'>
 
                 <div id='logo'>
-                    🔥Music
+                    <Link to="/">🔥Music</Link>
                 </div>
 
 
                 {/* Desktop Menu, which only appears on large screens */}
                 <ul id='menu'>
                     <li>
-                        Home
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        Artists
+                        <Link to="/artists">Artists</Link>
                     </li>
                 </ul>
 

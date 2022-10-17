@@ -8,3 +8,8 @@ const Hero = () => {
 }
 
 export default Hero
+
+// Show all the artists on the screen using map
+// No need to show content or excerpt, show artist name and image.
+// Grab the data using Axois
+// Style it up a little bit
