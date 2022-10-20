@@ -9,6 +9,7 @@ import Navbar from './Navbar'
 // import pages
 import Home from './../pages/Home'
 import Artists from './../pages/Artists'
+import ArtistItem from './../pages/ArtistItem'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         {/* all our routes go in here */}
         <Route path="/" element={<Home />} />
         <Route path="/artists" element={<Artists />} />
+        <Route path="/artist/:id" element={<ArtistItem />} />
       </Routes>
       <Footer />
     </BrowserRouter>

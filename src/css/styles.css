@@ -1,4 +1,5 @@
 /* nav */
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 #topnav {
   background: #ffbe0b;
   display: flex;
@@ -152,6 +153,22 @@
 
 .item img {
   max-width: 300px;
+}
+
+#artist-page {
+  padding: 30px;
+}
+#artist-page #banner {
+  background: #fff1c9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#artist-page #nickname {
+  font-family: "Inspiration", serif;
+  font-size: 48px;
+}
+#artist-page #diet-banner {
+  margin-bottom: 40px;
 }
 
 /* Media queries */

@@ -1,4 +1,7 @@
 import { useAxios } from "use-axios-client"
+// import dependencies
+import { Link } from "react-router-dom";
+
 // grab our env
 const baseUrl = process.env.REACT_APP_WP_API_BASEURL;
 
@@ -17,23 +20,27 @@ const AllArtists = () => {
     console.log(artists);
 
     const showArtists = artists.map((artist, index) => {
-
         const GetImageOrPlaceHolder = () => {
             if (artist._embedded) {
-                return (
-                    <img src={artist._embedded['wp:featuredmedia'][0].source_url} alt={artist.title.rendered} />
-                )
-            } else {
-                return (
-                    <img src="https://via.placeholder.com/500" alt="placeholder" />
-                )
+                if (artist._embedded['wp:featuredmedia']) {
+                    return (
+                        <img src={artist._embedded['wp:featuredmedia'][0].source_url} alt={artist.title.rendered} />
+                    )
+                }
+                else {
+                    return (
+                        <img src="https://via.placeholder.com/500" alt="placeholder" />
+                    )
+                }
             }
         }
 
         return (
             <div className="item" key={index}>
-                <GetImageOrPlaceHolder />
-                <h3>{artist.title.rendered}</h3>
+                <Link className="artist-link" to={`/artist/${artist.id}`} >
+                    <GetImageOrPlaceHolder />
+                    <h3>{artist.title.rendered}</h3>
+                </Link>
             </div>
         )
     })
@@ -51,3 +58,9 @@ const Artists = () => {
 }
 
 export default Artists
+
+// Your tasks -
+// Show the diet on the screen for each artist
+// Put a bootstrap icon next to the diet
+// Show the nickname under the artist name, in a different font
+// If no diet is chosen, don't show the icon, or mention the diet at all

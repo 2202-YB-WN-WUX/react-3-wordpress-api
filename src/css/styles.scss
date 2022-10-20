@@ -1,5 +1,9 @@
+// partials
 @import "./modules/variables";
 @import "./modules/navbar";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
 * {
     font-family: "Courier", sans-serif;
@@ -77,6 +81,27 @@
 .item {
     img {
         max-width: 300px;
+    }
+}
+
+// artist page
+
+#artist-page {
+    padding: 30px;
+
+    #banner {
+        background: $lightyellow;
+        padding: $med-spacing;
+        margin-bottom: $med-spacing;
+    }
+
+    #nickname {
+        font-family: 'Inspiration', serif;
+        font-size: 48px;
+    }
+
+    #diet-banner {
+        margin-bottom: 40px;
     }
 }
 
