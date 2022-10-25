@@ -105,6 +105,27 @@
     }
 }
 
+// genres
+
+.genre-pill {
+    padding: 5px 15px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+// back button
+#back-button {
+    border: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 // media queries
 @import "./modules/tablet-styles";
 @import "./modules/desktop-styles";

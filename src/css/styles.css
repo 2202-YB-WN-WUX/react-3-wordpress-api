@@ -171,6 +171,24 @@
   margin-bottom: 40px;
 }
 
+.genre-pill {
+  padding: 5px 15px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#back-button {
+  border: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 /* Media queries */
 @media screen and (min-width: 780px) {
   .show-mobile-menu-button {
