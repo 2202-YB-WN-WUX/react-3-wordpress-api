@@ -10,6 +10,7 @@ import Navbar from './Navbar'
 import Home from './../pages/Home'
 import Artists from './../pages/Artists'
 import ArtistItem from './../pages/ArtistItem'
+import GenreItems from './../pages/GenreItems'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/artists" element={<Artists />} />
         <Route path="/artist/:id" element={<ArtistItem />} />
+        <Route path="/genre/:id" element={<GenreItems />} />
       </Routes>
       <Footer />
     </BrowserRouter>

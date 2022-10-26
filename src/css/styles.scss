@@ -103,9 +103,17 @@
     #diet-banner {
         margin-bottom: 40px;
     }
+
+    img {
+        max-width: 400px;
+    }
 }
 
 // genres
+
+#genre-name {
+    padding: 30px;
+}
 
 .genre-pill {
     padding: 5px 15px;

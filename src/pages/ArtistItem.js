@@ -40,9 +40,11 @@ const RenderedArtist = () => {
 
         const renderedTaxonomies = taxonomies.map((genre, index) => {
             return (
-                <span className="genre-pill" key={index}>
-                    {genre.name}
-                </span>
+                <Link to={`/genre/${genre.id}`} key={index}>
+                    <span className="genre-pill" >
+                        {genre.name}
+                    </span>
+                </Link>
             )
         })
         return renderedTaxonomies
