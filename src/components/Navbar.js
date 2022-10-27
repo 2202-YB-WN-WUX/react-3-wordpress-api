@@ -34,6 +34,9 @@ const Navbar = () => {
                     <li>
                         <Link to="/artists">Artists</Link>
                     </li>
+                    <li>
+                        <Link to="/shop">Shop</Link>
+                    </li>
                 </ul>
 
                 {/* Hamburger icon, only shows up on small screens. */}

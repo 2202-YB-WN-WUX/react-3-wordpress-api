@@ -1,4 +1,5 @@
 import { X } from 'react-bootstrap-icons';
+import { Link } from "react-router-dom"
 
 const MobileMenu = ({ closeMethod }) => {
     return (
@@ -12,6 +13,9 @@ const MobileMenu = ({ closeMethod }) => {
                 </li>
                 <li>
                     Artists
+                </li>
+                <li>
+                    <Link to="/shop">Shop</Link>
                 </li>
             </ul>
         </>
