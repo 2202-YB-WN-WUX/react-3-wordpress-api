@@ -196,6 +196,22 @@
   cursor: pointer;
 }
 
+#product-item {
+  padding: 40px;
+}
+#product-item h1,
+#product-item h2 {
+  margin-bottom: 20px;
+}
+#product-item img {
+  max-width: 250px;
+}
+#product-item .product-description {
+  padding: 10px;
+  background: #f7f7f7;
+  margin-bottom: 5px;
+}
+
 /* Media queries */
 @media screen and (min-width: 780px) {
   .show-mobile-menu-button {

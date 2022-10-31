@@ -13,6 +13,7 @@ import ArtistItem from './../pages/ArtistItem'
 import GenreItems from './../pages/GenreItems'
 // shop pages
 import StoreFront from '../pages/shop/StoreFront'
+import Product from '../pages/shop/Product';
 
 const App = () => {
   return (
@@ -24,7 +25,9 @@ const App = () => {
         <Route path="/artists" element={<Artists />} />
         <Route path="/artist/:id" element={<ArtistItem />} />
         <Route path="/genre/:id" element={<GenreItems />} />
+        {/* shop routes */}
         <Route path="/shop" element={<StoreFront />} />
+        <Route path="/product/:id" element={<Product />} />
       </Routes>
       <Footer />
     </BrowserRouter>

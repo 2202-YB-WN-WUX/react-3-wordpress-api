@@ -134,6 +134,26 @@
     cursor: pointer;
 }
 
+// product page
+#product-item {
+    padding: 40px;
+
+    h1,
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 250px;
+    }
+
+    .product-description {
+        padding: 10px;
+        background: #f7f7f7;
+        margin-bottom: 5px;
+    }
+}
+
 // media queries
 @import "./modules/tablet-styles";
 @import "./modules/desktop-styles";
