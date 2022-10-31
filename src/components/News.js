@@ -1,4 +1,6 @@
 import { useAxios } from "use-axios-client"
+import { Link } from "react-router-dom"
+import formatDate from "../pages/ultilities/formatDate";
 
 // grab our env
 const baseUrl = process.env.REACT_APP_WP_API_BASEURL;
@@ -34,11 +36,15 @@ const AllNews = () => {
 
         return (
             <div className="item" key={index}>
-                <GetImageOrPlaceHolder />
-                <h3>{post.title.rendered}</h3>
-                <div className="content">
-                    <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                </div>
+                <Link to={`/news/${post.id}`}>
+                    <GetImageOrPlaceHolder />
+                    <h3>{post.title.rendered}</h3>
+                    <p><b>{formatDate(post.date)}</b></p>
+                    <div className="content">
+                        <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+                    </div>
+                    <button id="read-more">Read more</button>
+                </Link>
             </div>
         )
     })

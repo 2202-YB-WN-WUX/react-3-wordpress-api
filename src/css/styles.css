@@ -98,6 +98,11 @@
   margin: 0;
 }
 
+.item-container a {
+  color: black;
+  text-decoration: none;
+}
+
 #hero {
   background-color: #8338ec;
   color: #ffffff;
@@ -152,6 +157,19 @@
 }
 
 .item img {
+  max-width: 300px;
+}
+
+#read-more {
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+#news-item {
+  padding: 30px;
+}
+#news-item img {
   max-width: 300px;
 }
 

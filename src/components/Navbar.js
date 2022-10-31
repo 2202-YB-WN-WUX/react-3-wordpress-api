@@ -1,11 +1,13 @@
 // import dependancies
 import { Link } from "react-router-dom";
-
 import { useState } from 'react'
-import { List } from 'react-bootstrap-icons';
+import { List, Search } from 'react-bootstrap-icons';
 import MobileMenu from './MobileMenu'
 
 const Navbar = () => {
+    // search string state
+    // this collects the user's search
+    const [searchString, updateSearch] = useState("")
     // we need to include on and off state in navbar so we can open the navbar/close button
     // declare our menu state and a function to openMenu
     const [menuIsOpen, openMenu] = useState(false);
@@ -36,6 +38,24 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link to="/shop">Shop</Link>
+                    </li>
+                    <li>
+                        <form id="search-form" onSubmit={event => { event.preventDefault() }}>
+                            <input
+                                id="search-bar"
+                                type="text"
+                                placeholder="Search..."
+                                required
+                                onChange={
+                                    (event) => {
+                                        updateSearch(event.target.value)
+                                    }
+                                }
+                            />
+                            <button id="submit-search">
+                                <Search />
+                            </button>
+                        </form>
                     </li>
                 </ul>
 
