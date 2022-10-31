@@ -1,6 +1,6 @@
 import { useAxios } from "use-axios-client"
 import { Link } from "react-router-dom"
-import formatDate from "../pages/ultilities/formatDate";
+import formatDate from "../pages/utilities/formatDate";
 
 // grab our env
 const baseUrl = process.env.REACT_APP_WP_API_BASEURL;

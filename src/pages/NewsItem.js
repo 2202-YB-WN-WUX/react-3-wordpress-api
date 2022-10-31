@@ -2,7 +2,7 @@ import { useAxios } from "use-axios-client"
 import { useNavigate, useParams } from "react-router-dom"
 import { ArrowLeft } from "react-bootstrap-icons"
 // utilities
-import formatDate from "../pages/ultilities/formatDate"
+import formatDate from "./utilities/formatDate"
 
 const baseUrl = process.env.REACT_APP_WP_API_BASEURL;
 

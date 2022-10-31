@@ -1,7 +1,7 @@
 import { useAxios } from "use-axios-client"
 import { Link } from "react-router-dom"
 // import utilities
-import formatPrice from "../ultilities/formatPrice"
+import formatPrice from "../utilities/formatPrice"
 
 const baseStoreUrl = process.env.REACT_APP_WOO_BASEURL;
 
