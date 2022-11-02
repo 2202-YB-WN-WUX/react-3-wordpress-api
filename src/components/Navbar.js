@@ -25,7 +25,7 @@ const Navbar = () => {
             <div id='topnav'>
 
                 <div id='logo'>
-                    <Link to="/">🔥Music</Link>
+                    <Link to="/">🙌 Music</Link>
                 </div>
 
 
@@ -53,11 +53,17 @@ const Navbar = () => {
                                     }
                                 }
                             />
-                            <Link to={`/search-results/${searchString}`}>
+                            {searchString !== "" ?
+                                <Link to={`/search-results/${searchString}`}>
+                                    <button id="submit-search">
+                                        <Search />
+                                    </button>
+                                </Link> :
                                 <button id="submit-search">
                                     <Search />
                                 </button>
-                            </Link>
+                            }
+
                         </form>
                     </li>
                 </ul>

@@ -241,6 +241,30 @@
 #results-page {
   padding: 40px;
 }
+#results-page #results-container a {
+  text-decoration: none;
+}
+#results-page #results-container h3 {
+  color: black;
+}
+#results-page .search-result {
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+#results-page .search-result:hover {
+  background: #f7f7f7;
+}
+#results-page .search-result .subtype {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+#results-page .search-result .result-excerpt {
+  color: black;
+  font-size: 14px;
+}
 
 /* Media queries */
 @media screen and (min-width: 780px) {

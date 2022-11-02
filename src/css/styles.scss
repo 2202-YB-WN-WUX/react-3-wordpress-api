@@ -189,6 +189,38 @@
 
 #results-page {
     padding: 40px;
+
+    #results-container {
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            color: black;
+        }
+    }
+
+    .search-result {
+        padding: 10px;
+        border-bottom: 1px solid #eaeaea;
+
+        &:hover {
+            background: #f7f7f7
+        }
+
+        .subtype {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #8a8a8a;
+            margin-bottom: 10px;
+        }
+
+        .result-excerpt {
+            color: black;
+            font-size: 14px;
+        }
+    }
 }
 
 // media queries

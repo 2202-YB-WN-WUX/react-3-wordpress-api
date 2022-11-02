@@ -13,7 +13,7 @@ const AllNews = () => {
 
     // check if the news posts have been returned
     if (loading) return (
-        <p>Loading...</p>
+        <p>Loading 🍆</p>
     )
     if (!newsPosts) return "No posts found"
     if (error) return "Error"
