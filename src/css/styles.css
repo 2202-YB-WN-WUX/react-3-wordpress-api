@@ -98,6 +98,10 @@
   margin: 0;
 }
 
+.mb-5 {
+  margin-bottom: 5px;
+}
+
 .item-container a {
   color: black;
   text-decoration: none;
@@ -146,6 +150,10 @@
 }
 .item-container .item {
   padding: 20px;
+}
+.item-container .item.search-result {
+  background-color: lightpink;
+  border: 1px solid #8338ec;
 }
 .item-container .item img {
   width: 100%;
@@ -228,6 +236,10 @@
   padding: 10px;
   background: #f7f7f7;
   margin-bottom: 5px;
+}
+
+#results-page {
+  padding: 40px;
 }
 
 /* Media queries */

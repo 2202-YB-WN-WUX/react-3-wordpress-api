@@ -15,6 +15,8 @@ import NewsItem from '../pages/NewsItem';
 // shop pages
 import StoreFront from '../pages/shop/StoreFront'
 import Product from '../pages/shop/Product';
+// search results
+import SearchResults from '../pages/SearchResults';
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
         {/* shop routes */}
         <Route path="/shop" element={<StoreFront />} />
         <Route path="/product/:id" element={<Product />} />
+        {/* search route */}
+        <Route path="/search-results/:searchString" element={<SearchResults />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -11,6 +11,10 @@
     margin: 0;
 }
 
+.mb-5 {
+    margin-bottom: 5px;
+}
+
 .item-container a {
     color: black;
     text-decoration: none;
@@ -74,12 +78,19 @@
     .item {
         padding: $med-spacing;
 
+        &.search-result {
+            background-color: lightpink;
+            border: 1px solid $purple;
+        }
+
         img {
             width: 100%;
             height: 300px;
             object-fit: cover;
             object-position: 50% 0%;
         }
+
+
     }
 }
 
@@ -172,6 +183,12 @@
         background: #f7f7f7;
         margin-bottom: 5px;
     }
+}
+
+// search page
+
+#results-page {
+    padding: 40px;
 }
 
 // media queries
