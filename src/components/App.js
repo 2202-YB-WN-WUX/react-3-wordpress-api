@@ -1,5 +1,5 @@
 // import styles
-import './../css/styles.css';
+import './../css/styles.min.css';
 // import dependacies
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +12,7 @@ import Artists from './../pages/Artists'
 import ArtistItem from './../pages/ArtistItem'
 import GenreItems from './../pages/GenreItems'
 import NewsItem from '../pages/NewsItem';
+import Contact from '../pages/Contact';
 // shop pages
 import StoreFront from '../pages/shop/StoreFront'
 import Product from '../pages/shop/Product';
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/artist/:id" element={<ArtistItem />} />
         <Route path="/genre/:id" element={<GenreItems />} />
         <Route path="/news/:id" element={<NewsItem />} />
+        <Route path="/contact" element={<Contact />} />
         {/* shop routes */}
         <Route path="/shop" element={<StoreFront />} />
         <Route path="/product/:id" element={<Product />} />

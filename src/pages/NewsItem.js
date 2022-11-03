@@ -44,7 +44,8 @@ const NewsItem = () => {
             </div>
             <button id="back-button" onClick={() => {
                 navigate(-1)
-            }} ><ArrowLeft /> Go Back</button>
+            }} >
+                <ArrowLeft /> Go Back</button>
         </div>
     )
 }

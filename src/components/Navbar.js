@@ -41,6 +41,9 @@ const Navbar = () => {
                         <Link to="/shop">Shop</Link>
                     </li>
                     <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
+                    <li>
                         <form id="search-form" onSubmit={event => { event.preventDefault() }}>
                             <input
                                 id="search-bar"

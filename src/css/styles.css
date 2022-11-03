@@ -266,6 +266,10 @@
   font-size: 14px;
 }
 
+#contact {
+  padding: 40px;
+}
+
 /* Media queries */
 @media screen and (min-width: 780px) {
   .show-mobile-menu-button {
