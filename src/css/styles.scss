@@ -227,6 +227,17 @@
     padding: 40px;
 }
 
+#form-container {
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    button {
+        display: block;
+    }
+}
+
 // media queries
 @import "./modules/tablet-styles";
 @import "./modules/desktop-styles";

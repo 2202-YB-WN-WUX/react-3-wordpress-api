@@ -1,5 +1,5 @@
 import { useAxios } from "use-axios-client";
-import { Link, useParams, useNavigate } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { ArrowLeft } from "react-bootstrap-icons"
 import formatPrice from "../utilities/formatPrice"
 

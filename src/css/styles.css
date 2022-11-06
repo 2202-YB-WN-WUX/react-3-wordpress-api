@@ -270,6 +270,14 @@
   padding: 40px;
 }
 
+#form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+#form-container button {
+  display: block;
+}
+
 /* Media queries */
 @media screen and (min-width: 780px) {
   .show-mobile-menu-button {
