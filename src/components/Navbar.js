@@ -66,7 +66,6 @@ const Navbar = () => {
                                     <Search />
                                 </button>
                             }
-
                         </form>
                     </li>
                 </ul>
