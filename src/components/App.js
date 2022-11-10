@@ -1,7 +1,7 @@
 // import styles
 import './../css/styles.min.css';
 // import dependacies
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // import components
 import Footer from './Footer'
@@ -21,7 +21,7 @@ import SearchResults from '../pages/SearchResults';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         {/* all our routes go in here */}
@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/search-results/:searchString" element={<SearchResults />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
