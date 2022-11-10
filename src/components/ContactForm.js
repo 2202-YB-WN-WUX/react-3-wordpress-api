@@ -32,7 +32,24 @@ const ContactForm = () => {
             setSubmitted(true)
         }).catch((error) => {
             console.log(error)
+            setError("There was an error! Please try again later!")
         })
+    }
+    if (submitted) {
+        return (
+            <>
+                <h3>Thank you!</h3>
+                <p>Your message was sent. We'll be in touch soon.</p>
+            </>
+        )
+    }
+    if (error) {
+        return (
+            <>
+                <h3>Error!</h3>
+                <p>Sorry, we were unable to send your message. Please try again later.</p>
+            </>
+        )
     }
 
     return (

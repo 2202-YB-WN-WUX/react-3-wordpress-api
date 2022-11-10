@@ -18,6 +18,7 @@ const AllArtists = () => {
     if (!artists) return "No posts found"
     if (error) return "Error"
     console.log(artists);
+    console.log(endpoint)
 
     const showArtists = artists.map((artist, index) => {
         const GetImageOrPlaceHolder = () => {
